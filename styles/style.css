@@ -8,7 +8,7 @@ h1 {
     font-weight: 300;
 }
 
-p {
+p, a {
     font-size: 1em;
     font-family: "IBM Plex Sans", sans-serif;
     font-weight: 400;
@@ -16,16 +16,29 @@ p {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    grid-template-columns: 1fr;
+    gap: 32px;
 }
-  
+
+@media (min-width: 600px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+    }
+}
+
 .grid-item {
-    background-color: #ccc;
+    height: 200px;
+    background-color: #f2f4f8;
     padding: 20px;
     text-align: center;
     font-size: 24px;
-    border: 0.5px solid;
+}
+
+.grid-item:hover {
+    background-color: #dde1e6;
+    transition: 70ms;
 }
 
 footer p {
