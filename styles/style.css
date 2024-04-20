@@ -1,13 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
 h1 {
-    font-size: 48px;
+    font-size: 3em;
     font-family: "IBM Plex Sans", sans-serif;
     font-weight: 300;
-    font-style: light;
 }
 
 p {
-    font-size: 16px;
+    font-size: 1em;
     font-family: "IBM Plex Sans", sans-serif;
     font-weight: 400;
-    font-style: regular;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+  
+.grid-item {
+    background-color: #ccc;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    border: 0.5px solid;
+}
+
+footer p {
+    display: inline;
 }
