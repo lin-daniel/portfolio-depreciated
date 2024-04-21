@@ -1,6 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "IBM Plex Sans", sans-serif;
+    margin: 0px 20%;
 }
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 100px;
+    gap: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        margin: 0px 20px;
+    }
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+.box {
+    background-color: #f2f4f8;
+    border: 1px solid #a8a8a8;
+}
+
+.box:hover {
+    background-color: #dde1e6;
+    transition: 70ms;    
+}
+
+
 
 /*
 
