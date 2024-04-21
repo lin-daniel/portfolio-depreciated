@@ -34,6 +34,7 @@ p, a {
     padding: 20px;
     text-align: center;
     font-size: 24px;
+    border: 1px solid #a8a8a8;
 }
 
 .grid-item:hover {
