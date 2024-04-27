@@ -5,6 +5,8 @@
 body {
     margin: 0px;
     font-family: "IBM Plex Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 .nav {
@@ -43,7 +45,7 @@ h1 {
 }
 
 .content {
-    margin: 0px 20%;
+    margin: 16px 20%;
 }
 
 .wrapper {
@@ -51,6 +53,20 @@ h1 {
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: 180px;
     gap: 10px;
+}
+
+.box {
+    background-color: #f2f4f8;
+    border: 1px solid #a8a8a8;
+}
+
+.box:hover {
+    background-color: #dde1e6;
+    transition: 70ms;    
+}
+
+footer {
+    margin: 72px 20%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -66,14 +82,7 @@ h1 {
     .wrapper {
         grid-template-columns: 1fr;
     }
-}
-
-.box {
-    background-color: #f2f4f8;
-    border: 1px solid #a8a8a8;
-}
-
-.box:hover {
-    background-color: #dde1e6;
-    transition: 70ms;    
+    footer {
+        margin: 72px 5%;
+    }
 }
