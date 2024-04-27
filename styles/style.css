@@ -53,14 +53,20 @@ h1 {
     gap: 10px;
 }
 
-/* @media only screen and (max-width: 600px) {
-    body {
-        margin: 0px 20px;
+@media only screen and (max-width: 600px) {
+    .nav ul {
+        margin: 0px 5%;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .content {
+        margin: 0px 5%;
     }
     .wrapper {
         grid-template-columns: 1fr;
     }
-} */
+}
 
 .box {
     background-color: #f2f4f8;
