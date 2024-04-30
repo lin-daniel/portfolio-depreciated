@@ -48,11 +48,11 @@ h1 {
     margin: 16px 20%;
 }
 
-.wrapper {
+.grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: 180px;
-    gap: 10px;
+    gap: 16px;
 }
 
 .box {
@@ -63,6 +63,14 @@ h1 {
 .box:hover {
     background-color: #dde1e6;
     transition: 70ms;    
+}
+
+.about-container {
+    display: flex;
+}
+
+.about-item {
+    flex: 1;
 }
 
 footer {
@@ -79,8 +87,11 @@ footer {
     .content {
         margin: 0px 5%;
     }
-    .wrapper {
+    .grid {
         grid-template-columns: 1fr;
+    }
+    .about-item {
+        flex: 0 1 auto;
     }
     footer {
         margin: 72px 5%;
