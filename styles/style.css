@@ -3,24 +3,27 @@
 }
 
 body {
-    margin: 0px;
-    font-family: "IBM Plex Sans", sans-serif;
     display: flex;
     flex-direction: column;
+    margin: 0px;
+    font-family: "IBM Plex Sans", sans-serif;
 }
 
 .nav {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.nav ul {
-    padding: 0px;
+.nav .nav-container {
+    display: flex;
+    justify-content: space-between;
     margin: 0px 20%;
-    list-style: none;
 }
 
-.nav li {
-    display: inline;
+.nav ul {
+    display: inherit;
+    margin: 0px 0px;
+    padding: 0px;
+    list-style: none;
 }
 
 .nav li a {
@@ -45,7 +48,8 @@ h1 {
 }
 
 .content {
-    margin: 16px 20%;
+    min-height: 100vh;
+    margin: 24px 20% 48px;
 }
 
 .grid {
@@ -74,18 +78,18 @@ h1 {
 }
 
 footer {
-    margin: 72px 20%;
+    margin: auto 20% 16px;
 }
 
 @media only screen and (max-width: 600px) {
-    .nav ul {
+    .nav .nav-container {
         margin: 0px 5%;
     }
     h1 {
         font-size: 2rem;
     }
     .content {
-        margin: 0px 5%;
+        margin: 16px 5%;
     }
     .grid {
         grid-template-columns: 1fr;
@@ -94,6 +98,6 @@ footer {
         flex: 0 1 auto;
     }
     footer {
-        margin: 72px 5%;
+        margin: auto 5% 8px;
     }
 }
