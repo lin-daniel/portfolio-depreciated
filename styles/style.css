@@ -13,6 +13,10 @@ body {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
+.nav #active-page {
+    background-color: #F2F2F2;
+}
+
 .nav .nav-container {
     display: flex;
     justify-content: space-between;
@@ -35,22 +39,27 @@ body {
     color: inherit;
 }
 
+.nav .nav-page:hover {
+    background-color: #F2F2F2;
+}
+
 .nav .nav-links {
     display: flex;
-    margin: auto 8px;
+    margin-left: 24px;
 }
 
-.nav li a:hover {
-    background-color: #F2F2F2;
-}
-
-.nav li #active-page {
-    background-color: #F2F2F2;
+.nav .nav-links:hover {
+    filter: opacity(50%);
 }
 
 h1 {
     font-size: 2.625rem;
     font-weight: 300;
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: 400;
 }
 
 .content {
