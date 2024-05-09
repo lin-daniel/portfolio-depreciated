@@ -81,10 +81,10 @@ h2 {
     border: 1px solid #a8a8a8;
 }
 
-.box:hover {
+/* .box:hover {
     background-color: #dde1e6;
     transition: 70ms;    
-}
+} */
 
 .box img {
     width: 100%;
